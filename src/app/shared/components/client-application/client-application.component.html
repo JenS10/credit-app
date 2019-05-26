@@ -1,0 +1,27 @@
+<div class="container">
+  <div>
+    <h3>Datos del cliente</h3>
+  </div>
+  <section>
+    <form [formGroup]="clientForm">
+      <div>
+        <mat-form-field>
+          <input matInput placeholder="Nombre" formControlName="name" required>
+        </mat-form-field>
+        
+        <mat-form-field>
+          <input matInput placeholder="Apellido" formControlName="lastname" required>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field>
+          <input matInput type="number" placeholder="Cedula" formControlName="identification" required>
+        </mat-form-field>
+      
+        <mat-form-field>
+          <input matInput type="text" placeholder="Correo" formControlName="email" required>
+        </mat-form-field>
+      </div>
+    </form>
+  </section>
+</div>

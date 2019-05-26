@@ -1,0 +1,20 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+h1 {
+  font-family: sans-serif;
+  color: rebeccapurple;
+  font-size: 23px;
+}
+
+h3 {
+  font-family: sans-serif;
+  color: rebeccapurple;
+}
+
+.margin-left {
+  margin-left: 5px;
+}
+
+.display-flex{
+    display: flex;
+}

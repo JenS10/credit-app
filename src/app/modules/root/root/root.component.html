@@ -1,0 +1,18 @@
+<mat-toolbar>
+  <a class="unlink" routerLink="/"><h1>Crédito</h1></a>    
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>more_vert</mat-icon>
+  </button>
+    <mat-menu #menu="matMenu">
+      <a mat-menu-item routerLink="/credit">
+        <mat-icon>attach_money</mat-icon>
+        <span>Solicitud</span>
+      </a>
+      <a mat-menu-item routerLink="/client">
+        <mat-icon>people</mat-icon>
+        <span>Clientes</span>
+      </a>
+    </mat-menu>
+</mat-toolbar>
+<router-outlet></router-outlet>
+  

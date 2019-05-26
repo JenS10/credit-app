@@ -1,0 +1,19 @@
+.container {
+    width: 450px;
+}
+
+section form mat-form-field {
+    margin-left: 10px;
+    width: 400px;
+}
+
+section form div mat-form-field {
+    margin-left: 10px;
+    width: 200px;
+}
+
+.button {
+    display: flex;
+    width: 450px;
+    justify-content: flex-end;
+}

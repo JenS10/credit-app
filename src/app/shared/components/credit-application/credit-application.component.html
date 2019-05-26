@@ -1,0 +1,37 @@
+<div class="container">
+  <div>
+    <h3>Datos del crédito</h3>
+  </div>
+  <section>
+    <form [formGroup]="creditForm">
+      <div>
+        <mat-form-field>
+          <input matInput type="number" placeholder="Valor solicitado" formControlName="value" min="100000" max="1000000" required>
+        </mat-form-field>
+      
+        <mat-form-field>
+          <input matInput [matDatepicker]="payment" placeholder="Fecha de pago" formControlName="payment_date">
+          <mat-datepicker-toggle matSuffix [for]="payment"></mat-datepicker-toggle>
+          <mat-datepicker #payment></mat-datepicker>
+        </mat-form-field>  
+      </div>
+      <div>
+        <mat-form-field>
+          <mat-select placeholder="status" formControlName="status">
+            <mat-option [value]="null"></mat-option>
+            <mat-option [value]="true">Aprobado</mat-option>
+            <mat-option [value]="false">Rechazado</mat-option>
+          </mat-select>
+        </mat-form-field>
+      
+        <mat-form-field>
+          <mat-select placeholder="paid" formControlName="paid">
+            <mat-option [value]="null"></mat-option>
+            <mat-option [value]="true">Pagado</mat-option>
+            <mat-option [value]="false">Sin pagar</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </form>
+  </section>
+</div>

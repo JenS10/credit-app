@@ -1,0 +1,59 @@
+{
+  "clients": [
+    {
+      "id": 1,
+      "name": "jenny",
+      "lastname": "salas",
+      "identification": 121212,
+      "email": "dd@dd.com"
+    },
+    {
+      "id": 2,
+      "name": "luis",
+      "lastname": "p",
+      "identification": 676767,
+      "email": "p@algo.com"
+    },
+    {
+      "id": 3,
+      "name": "luis",
+      "lastname": "p",
+      "identification": 4444,
+      "email": "ptt@algo.com"
+    }
+  ],
+  "credits": [
+    {
+      "id": 1,
+      "value": 300000,
+      "payment_date": "",
+      "status": true,
+      "paid": true,
+      "client_id": 1
+    },
+    {
+      "id": 2,
+      "value": 300000,
+      "payment_date": "",
+      "status": false,
+      "paid": true,
+      "client_id": 1
+    },
+    {
+      "id": 3,
+      "value": 474747,
+      "payment_date": "",
+      "status": true,
+      "paid": true,
+      "client_id": 2
+    },
+    {
+      "id": 4,
+      "value": 434321,
+      "payment_date": "",
+      "status": true,
+      "paid": false,
+      "client_id": 3
+    }
+  ]
+}

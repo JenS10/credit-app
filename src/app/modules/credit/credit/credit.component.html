@@ -1,0 +1,14 @@
+<div>
+    <h1>Solicitud de crédito</h1>
+</div>
+<app-bank-amount></app-bank-amount>
+<app-credit-application #creditData
+  [data]="creditInfo">
+</app-credit-application>
+<app-client-application #clientData
+  [data]="clientInfo">
+</app-client-application>
+
+<div class="button">
+  <button mat-flat-button color="primary" (click)="save()">Solicitar</button>
+</div>

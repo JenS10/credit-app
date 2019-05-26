@@ -1,0 +1,15 @@
+<div>
+    <h1>Listado de clientes</h1>
+</div>
+<div class="example-button-row">
+  <button mat-flat-button color="accent" (click)="getClientCredits()">Todos</button>
+  <button mat-flat-button color="accent" class="margin-left" (click)="getClientCredits({status: true})">Aprobados</button>
+  <button mat-flat-button color="accent" class="margin-left" (click)="getClientCredits({status: true, paid: false})">Pendientes de pagar</button>
+  <button mat-flat-button color="accent" class="margin-left" (click)="getClientCredits({status: false})">Rechazados</button>
+</div>
+
+<app-clients-list
+  [data]="creditList"
+  (eventPay)="pay($event)"
+  (eventGoToCreditInfo)="goToCreditInfo($event)">
+</app-clients-list>
